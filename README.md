@@ -25,3 +25,13 @@
 
 -   email : admin@grtech.com
 -   password : password
+
+# Notes Email Notice
+
+set in your .env file this value
+
+`MAIL_MAILER=smtp`
+`MAIL_HOST=`
+`MAIL_PORT=`
+`MAIL_USERNAME=`
+`MAIL_PASSWORD=`

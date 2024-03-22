@@ -5,9 +5,12 @@ namespace App\Http\Controllers;
 use App\Http\Requests\EmployeeRequest;
 use App\Models\Company;
 use App\Models\Employee;
+use App\Models\User;
+use App\Notifications\EmployeeCreated;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Facades\Storage;
 use Inertia\Inertia;
 
@@ -52,13 +55,17 @@ class EmployeeController extends Controller
         DB::beginTransaction();
 
         try {
-            Employee::create([
+            $data = Employee::create([
                 'first_name' => $request->first_name,
                 'last_name' => $request->last_name,
                 'email' => $request->email,
                 'company_id' => $request->company_id,
                 'phone' => $request->phone
             ]);
+
+            // send notif email send all user
+            $user = User::all();
+            Notification::send($user, new EmployeeCreated($data));
 
             DB::commit();
 
