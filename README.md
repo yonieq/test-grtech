@@ -1,7 +1,7 @@
 # Install
 
 1. clone this repo `git clone https://github.com/yonieq/test-grtech.git`
-2. sign in folder project
+2. sign in folder project on your terminal
 3. next `composer install`
 4. next `npm install`
 5. `npm run build`
