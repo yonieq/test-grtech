@@ -28,7 +28,7 @@
 
 # Notes Email Notice
 
-set in your .env file this value
+set in your .env file this value. Im using mailtrap for email free
 
 `MAIL_MAILER=smtp`
 `MAIL_HOST=`
