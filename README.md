@@ -13,3 +13,15 @@
 # Notes
 
 -   setting APP_URL in folder .env according to the running application will affect the rendering of the image
+
+# Authentication User
+
+`User`
+
+-   email : user@grtech.com
+-   password : password
+
+`Admin`
+
+-   email : admin@grtech.com
+-   password : password
