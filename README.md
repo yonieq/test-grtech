@@ -30,8 +30,8 @@
 
 set in your .env file this value. Im using mailtrap for email free
 
-`MAIL_MAILER=smtp`
-`MAIL_HOST=`
-`MAIL_PORT=`
-`MAIL_USERNAME=`
-`MAIL_PASSWORD=`
+-   `MAIL_MAILER=smtp`
+-   `MAIL_HOST=`
+-   `MAIL_PORT=`
+-   `MAIL_USERNAME=`
+-   `MAIL_PASSWORD=`
